@@ -1,0 +1,23 @@
+.major {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: red;
+    position: fixed;
+  }
+
+.minor {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background: yellow;
+    position: fixed;
+}
+
+* {
+    background: black;
+}

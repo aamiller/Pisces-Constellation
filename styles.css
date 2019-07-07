@@ -31,14 +31,14 @@
 }
 
 * {
-    background: #09001d;
+    background: #05000f;
 }
 
 h1 {
     padding-top: 10px;
     letter-spacing: 1.3vw;
     margin-bottom: 1vh;
-    color: rgba(255, 243, 228, 0.781);
+    color: rgba(255, 254, 219, 0.5);
 }
 
 h1, h2 {
@@ -50,12 +50,32 @@ h1, h2 {
 
 h2 {
     margin-top: 0;
-    color: rgba(255, 255, 255, 0.616);
-    font-size: 1.3em;
+    color: rgba(254, 255, 248, 0.616);
+    font-size: 1.2em;
     letter-spacing: .2vw;
 }
 
 b {
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.89);
+    color: rgba(255, 255, 255, 0.671);
+}
+
+#social {
+    color: rgba(255, 254, 240, 0.363);
+    font-size: 30px;
+    position: absolute;
+    bottom: 15vh;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.05vw;
+}
+
+.fa:hover, .fab:hover {
+    color: rgba(253, 250, 201, 0.678);
+    transition: 0.8s;
+
+}
+
+a {
+    color: inherit;
 }

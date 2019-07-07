@@ -44,7 +44,6 @@ for (var i in points) {
 
 for (var i in pointDivs) {
     if (Math.random() > .90) {
-        console.log("yay");
         pointDivs[i].style.background = "yellow";
     }
 

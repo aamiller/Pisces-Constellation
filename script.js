@@ -59,7 +59,8 @@ for (var i in pointDivs) {
 
     if (Math.random() > .40) {
         (function (i) {
-            setInterval(function () { pointDivs[i].style.opacity = opacities[Math.floor(Math.random() * 8)]; }, 400);
+            setInterval(function () { pointDivs[i].style.opacity = opacities[Math.floor(Math.random() * 8)]; },
+                350 + (Math.random() * 100));
         })(i);
     }
 }

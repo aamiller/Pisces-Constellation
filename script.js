@@ -22,7 +22,7 @@ let points = [
 ]
 
 var pointDivs = [];
-let opacities = [1, .9, .8, .7, .6, .5, .4, .3, .2, .1];
+let opacities = [.8, .7, .6, .5, .4, .3, .2, .1];
 let holder = document.getElementById("pointsHolder");
 
 for (var i in points) {
@@ -43,10 +43,25 @@ for (var i in points) {
 }
 
 for (var i in pointDivs) {
-    console.log(i);
-    (function (i) {
-        setInterval(function () { pointDivs[i].style.opacity = opacities[Math.floor(Math.random() * 10)]; }, 300);
-    })(i);
+    if (Math.random() > .90) {
+        console.log("yay");
+        pointDivs[i].style.background = "yellow";
+    }
+
+    if (Math.random() > .95) {
+        pointDivs[i].style.background = "pink";
+    }
+
+    if (Math.random() > .95) {
+        pointDivs[i].style.background = "lightblue";
+    }
+
+
+    if (Math.random() > .40) {
+        (function (i) {
+            setInterval(function () { pointDivs[i].style.opacity = opacities[Math.floor(Math.random() * 8)]; }, 400);
+        })(i);
+    }
 }
 
 

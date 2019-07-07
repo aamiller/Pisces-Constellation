@@ -6,7 +6,7 @@
     border-radius: 25px;
     background: red;
     position: fixed;
-  }
+}
 
 .minor {
     width: 4px;
@@ -24,14 +24,17 @@
 
 #pointsHolder {
     position: fixed;
-    top: 83%;
+    margin-top: 57.5vh;
     left: 35%;
-    margin-top: -100px; /* Negative half of height. */
     margin-left: -250px; /* Negative half of width. */
 }
 
 * {
     background: #05000f;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 h1 {
@@ -68,6 +71,7 @@ b {
     text-align: center;
     width: 100%;
     letter-spacing: 1.05vw;
+    background: none;
 }
 
 .fa:hover, .fab:hover {
@@ -89,23 +93,21 @@ a {
     color: inherit;
 }
 
-/* start of desktop styles */
 
-@media screen and (max-width: 991px) {
-    /* start of large tablet styles */
-
+@media only screen and (max-height: 700px) {
     #pointsHolder {
-        top: 50%;
+        position: fixed;
+        margin-top: 67vh;
+        left: 35%;
+        margin-left: -250px; /* Negative half of width. */
     }
-    
+  }
+
+
+@media only screen and (max-width: 780px) {
+    #pointsHolder {
+        position: fixed;
+        left: 25%;
+        margin-left: -250px; /* Negative half of width. */
     }
-    
-    @media screen and (max-width: 767px) {
-    /* start of medium tablet styles */
-    
-    }
-    
-    @media screen and (max-width: 479px) {
-    /* start of phone styles */
-    
-    }
+  }

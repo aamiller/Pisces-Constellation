@@ -19,14 +19,15 @@ let points = [
     { x: 9.3, y: 1.09, t: 0 }, // (9.3, 1.09)
     { x: 8.88, y: 0.67, t: 0 }, // (8.88, 0.67)
     { x: 8.17, y: 0.67, t: 0 } // (8.17, 0.67)
-];
+]
 
+var pointDivs = [];
+let opacities = [1, .9, .8, .7, .6, .5, .4, .3, .2, .1];
 let holder = document.getElementById("pointsHolder");
-console.log(holder);
+
 for (var i in points) {
     var x = (points[i].x * 80).toString();
     var y = (points[i].y * 80).toString();
-
     var element = document.createElement("div");
 
     if (points[i].t == 0) {
@@ -37,6 +38,15 @@ for (var i in points) {
 
     element.setAttribute("style", "left: " + x + "; bottom: " + y + ";");
     holder.appendChild(element);
+
+    pointDivs.push(element);
+}
+
+for (var i in pointDivs) {
+    console.log(i);
+    (function (i) {
+        setInterval(function () { pointDivs[i].style.opacity = opacities[Math.floor(Math.random() * 10)]; }, 300);
+    })(i);
 }
 
 

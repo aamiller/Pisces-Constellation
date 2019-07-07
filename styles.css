@@ -73,9 +73,39 @@ b {
 .fa:hover, .fab:hover {
     color: rgba(253, 250, 201, 0.678);
     transition: 0.8s;
+}
 
+b:hover {
+    color: rgba(176, 255, 200, 0.678);
+    transition: 2s;
+}
+
+h2:hover {
+    color: rgba(255, 252, 194, 0.678);
+    transition: 0.8s;
 }
 
 a {
     color: inherit;
 }
+
+/* start of desktop styles */
+
+@media screen and (max-width: 991px) {
+    /* start of large tablet styles */
+
+    #pointsHolder {
+        top: 50%;
+    }
+    
+    }
+    
+    @media screen and (max-width: 767px) {
+    /* start of medium tablet styles */
+    
+    }
+    
+    @media screen and (max-width: 479px) {
+    /* start of phone styles */
+    
+    }

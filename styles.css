@@ -9,15 +9,27 @@
   }
 
 .minor {
-    width: 10px;
-    height: 10px;
+    width: 3px;
+    height: 3px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    background: yellow;
+    background: rgba(208, 220, 251, 0.733);
+    position: relative;
+    box-shadow:
+    0 0 70px 3px #fff,  /* inner white */
+    0 0 50px 2px #f0f, /* middle magenta */
+    0 0 100px 10px #0ff; /* outer cyan */
+}
+
+#pointsHolder {
     position: fixed;
+    top: 80%;
+    left: 35%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -250px; /* Negative half of width. */
 }
 
 * {
-    background: black;
+    background: #08001a;
 }
